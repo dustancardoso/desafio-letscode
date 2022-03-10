@@ -31,7 +31,3 @@ build/
 
 ### VS Code ###
 .vscode/
-/demodb.mv.db
-/demodb.trace.db
-/mvnw
-/mvnw.cmd
