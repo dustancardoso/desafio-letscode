@@ -1,8 +1,6 @@
 package com.desafioletscode.controller;
 
-import java.security.Principal;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
 
@@ -12,7 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.oauth2.common.OAuth2AccessToken;
-import org.springframework.security.oauth2.provider.token.ConsumerTokenServices;
 import org.springframework.security.oauth2.provider.token.TokenStore;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -20,19 +17,13 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.context.annotation.SessionScope;
 
 import com.desafioletscode.erros.ErroInternoException;
 import com.desafioletscode.erros.MensagensApi;
 import com.desafioletscode.model.RodadaJogo;
 import com.desafioletscode.model.RodadaJogoFilme;
 import com.desafioletscode.model.SelecaoFilme;
-import com.desafioletscode.repository.RodadaJogoFilmeRepository;
-import com.desafioletscode.security.ConfiguracaoSegurancaWeb;
-import com.desafioletscode.service.ConsumerIMDBService;
 import com.desafioletscode.service.RodadaJogoService;
-
-import io.netty.handler.codec.http.HttpRequest;
 
 @RestController
 @RequestMapping("/apijogo/rodadaJogo")

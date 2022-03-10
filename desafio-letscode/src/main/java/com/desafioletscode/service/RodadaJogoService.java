@@ -3,10 +3,8 @@ package com.desafioletscode.service;
 import java.security.Principal;
 import java.util.Collection;
 import java.util.Date;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Optional;
-import java.util.TreeMap;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.transaction.Transactional;
@@ -15,9 +13,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.desafioletscode.erros.ErroInternoException;
-import com.desafioletscode.model.RodadaJogoFilme;
 import com.desafioletscode.model.Jogador;
 import com.desafioletscode.model.RodadaJogo;
+import com.desafioletscode.model.RodadaJogoFilme;
 import com.desafioletscode.repository.JogadorRepository;
 import com.desafioletscode.repository.RodadaJogoRepository;
 

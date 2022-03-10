@@ -3,7 +3,6 @@ package com.desafioletscode.service;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import java.util.TreeMap;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;

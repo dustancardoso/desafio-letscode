@@ -2,12 +2,9 @@ package com.desafioletscode.controllers;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
-
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-
-import static io.restassured.module.mockmvc.RestAssuredMockMvc.given;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,11 +24,7 @@ import com.desafioletscode.erros.MensagensApi;
 import com.desafioletscode.model.Jogador;
 import com.desafioletscode.model.JogadorRanking;
 import com.desafioletscode.service.JogadorService;
-import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
-import io.restassured.http.ContentType;
-import net.minidev.json.JSONUtil;
 
 @WebMvcTest(JogadorRestController.class)
 @AutoConfigureMockMvc(addFilters = false)
