@@ -1,6 +1,6 @@
 HELP.md
 target/
-.mvn/**
+/.mvn/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
@@ -34,3 +34,4 @@ build/
 /demodb.mv.db
 /.gitignore
 /demodb.trace.db
+
